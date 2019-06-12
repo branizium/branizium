@@ -75,6 +75,12 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+    if (message.content === '!facebook') {
+    message.channel.sendMessage('Facebook   : https://m.facebook.com/profile.php?id=100035739033654&ref=content_filter ');
+  }
+});
+
 client.on("message", message => {
     if (!message.guild) return
     let args = message.content.trim().split(/ +/g)
