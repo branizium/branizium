@@ -69,6 +69,12 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+    if (message.content === '!twitter') {
+    message.channel.sendMessage('twitter  : https://mobile.twitter.com/branizium ');
+  }
+});
+
 client.on("message", message => {
     if (!message.guild) return
     let args = message.content.trim().split(/ +/g)
