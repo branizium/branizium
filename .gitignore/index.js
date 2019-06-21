@@ -12,8 +12,8 @@ client.on('guildMemberAdd', member =>{
     let embed = new Discord.RichEmbed()
         .setDescription(':tada: **' + member.user.username + '** a rejoint ' + member.guild.name)
         .setFooter('Nous sommes désormais ' + member.guild.memberCount)
-    member.guild.channels.get('502356871852720138').send(embed)
-    member.addRole('554219839787630593')
+    member.guild.channels.get('515590821563596811').send(embed)
+    member.addRole('515589041383669766')
  
 });
  
@@ -21,7 +21,7 @@ client.on('guildMemberRemove', member =>{
     let embed = new Discord.RichEmbed()
         .setDescription(':cry: **' + member.user.username + '** a quitté ' + member.guild.name)
         .setFooter('Nous sommes désormais ' + member.guild.memberCount)
-    member.guild.channels.get('502356871852720138').send(embed)
+    member.guild.channels.get('515590821563596811').send(embed)
  
 });
 
@@ -58,26 +58,26 @@ client.on('message',message =>{
 });
 
 client.on('message', message => {
-    if (message.content === '!ip') {
-    message.channel.sendMessage('IP : play.braniziumpvp.fr ');
+    if (message.content === '!help') {
+    message.channel.sendMessage('soon ');
   }
 });
 
 client.on('message', message => {
     if (message.content === '!site') {
-    message.channel.sendMessage('site : http://braniziumpvp.fr/ ');
+    message.channel.sendMessage('site : soon ');
   }
 });
 
 client.on('message', message => {
     if (message.content === '!twitter') {
-    message.channel.sendMessage('twitter  : https://mobile.twitter.com/branizium ');
+    message.channel.sendMessage('twitter  : soon ');
   }
 });
 
 client.on('message', message => {
     if (message.content === '!facebook') {
-    message.channel.sendMessage('Facebook   : https://m.facebook.com/profile.php?id=100035739033654&ref=content_filter ');
+    message.channel.sendMessage('Facebook   : soon ');
   }
 });
 
