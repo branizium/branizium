@@ -183,24 +183,4 @@ client.on("message", message => {
     }
 })
 
-module.exports = class help extends Command {
-    
-    static match(message) {
-        if(message.content === '!help') {
-            return true
-        }
-    }
- 
-    static action(message) {
-     
-        let help = new Discord.RichEmbed()
-            .setTitle('HELP')
-            .setDescription('Liste Des Commandes')
-            .addBlankField()
-            .addField('!help', 'vous donne toute les commandes du serveur')
-            .addField('!facebok', 'vous donne acces a facebook')
-            
-        
-    
-        message.channel.send(help)
         
