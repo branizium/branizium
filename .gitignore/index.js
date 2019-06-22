@@ -182,3 +182,21 @@ client.on("message", message => {
 
     }
 })
+
+module.exports = class help extends Command {
+    
+    static match(message) {
+        if(message.content === '!help') {
+            return true
+        }
+    }
+ 
+    static action(message) {
+     
+        let help = new Discord.RichEmbed()
+            .setTitle('HELP')
+            .setDescription('Liste Des Commandes')
+        
+    
+        message.channel.send(help)
+        
