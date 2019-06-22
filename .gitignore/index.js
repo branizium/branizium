@@ -196,6 +196,10 @@ module.exports = class help extends Command {
         let help = new Discord.RichEmbed()
             .setTitle('HELP')
             .setDescription('Liste Des Commandes')
+            .addBlankField()
+            .addField('!help', 'vous donne toute les commandes du serveur')
+            .addField('!facebok', 'vous donne acces a facebook')
+            
         
     
         message.channel.send(help)
