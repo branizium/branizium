@@ -185,8 +185,6 @@ client.on("message", message => {
 
 /* eslint-disable */
 
-const Command = require("../../modules/Command.js");
-
 class Help extends Command {
   constructor(client) {
     super(client, {
