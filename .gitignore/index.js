@@ -12,8 +12,7 @@ client.on('guildMemberAdd', member =>{
     let embed = new Discord.RichEmbed()
         .setDescription(':tada: **' + member.user.username + '** a rejoint ' + member.guild.name)
         .setFooter('Nous sommes désormais ' + member.guild.memberCount)
-    member.guild.channels.get('515590821563596811').send(embed)
-    member.addRole('515589041383669766')
+    member.guild.channels.get('502356871852720138').send(embed)
  
 });
  
@@ -21,7 +20,7 @@ client.on('guildMemberRemove', member =>{
     let embed = new Discord.RichEmbed()
         .setDescription(':cry: **' + member.user.username + '** a quitté ' + member.guild.name)
         .setFooter('Nous sommes désormais ' + member.guild.memberCount)
-    member.guild.channels.get('515590821563596811').send(embed)
+    member.guild.channels.get('502356871852720138').send(embed)
  
 });
 
