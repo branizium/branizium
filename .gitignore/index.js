@@ -75,8 +75,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '!facebook') {
-    message.channel.sendMessage('Facebook   : soon ');
+    if (message.content === '!ip') {
+    message.channel.sendMessage('IP   : ArcusMC.minesr.com');
   }
 });
 
