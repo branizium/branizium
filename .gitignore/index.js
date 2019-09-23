@@ -64,7 +64,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!site') {
-    message.channel.sendMessage('site : soon ');
+    message.channel.sendMessage('site : https://arcusmc.cmws.fr ');
   }
 });
 
