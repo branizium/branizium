@@ -70,7 +70,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!twitter') {
-    message.channel.sendMessage('twitter  : soon ');
+    message.channel.sendMessage('twitter  : https://mobile.twitter.com/mc_arcus ');
   }
 });
 
